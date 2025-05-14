@@ -16,7 +16,7 @@ class LLMConnection:
     def __init__(self, config: dict[str, Any]):
         self.config = config
         self.llm_config = None
-        self.openai = OpenAI(api_key=self.config.llm_api_key, base_url=f"{os.getenv('OLLAMA_HOST',None)}")
+        self.openai = OpenAI(api_key=self.config.llm_api_key, base_url=f"{os.getenv('OLLAMA_HOST',None)}/v1")
         self.groq = Groq(api_key=self.config.llm_api_key)
         self.openrouter = OpenAI(
             base_url="https://openrouter.ai/api/v1",
