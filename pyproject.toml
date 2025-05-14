@@ -45,10 +45,10 @@ dependencies = [
     "python-decouple>=3.8",
     "deepseek>=1.0.0",
     "fastapi>=0.115.12",
-    "python-multipart>=0.0.20",
+    "python-multipart>=0.0",
     "ollama>=0.4.8",
     "mcp[cli]>=1.7.1",
-    "chainlit>=1"
+    "chainlit>=2"
 ]
 
 [project.scripts]
